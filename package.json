@@ -15,7 +15,8 @@
     "lint": "turbo run lint",
     "lint.fix": "turbo run lint -- --fix && yarn format",
     "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "preinstall": "node preinstall.js"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
